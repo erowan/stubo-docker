@@ -27,7 +27,7 @@ run
 
 linux and osx:
 
-    $ git clone https://github.com/Stub-O-Matic/stubo-docker.git
+    $ git clone https://github.com/erowan/stubo-docker.git
     $ cd stubo-docker
     $ docker login
     $ ./stubo-env.sh stop

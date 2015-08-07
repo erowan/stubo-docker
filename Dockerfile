@@ -1,6 +1,6 @@
 FROM debian:wheezy
 
-MAINTAINER Rowan Shulver <rowan.shulver@opencredo.com>
+MAINTAINER Rowan Shulver <rowan.shulver@gmail.com>
 
 # add our user and group first to make sure their IDs get assigned consistently, regardless of whatever dependencies get added
 RUN groupadd -r stubo && useradd -r -g stubo stubo
@@ -17,7 +17,7 @@ WORKDIR /opt/stubo
 RUN mkdir -p /opt/stubo/stubo-app-master
 
 # install stubo into system python
-RUN pip install https://github.com/Stub-O-Matic/stubo-app/archive/master.tar.gz
+RUN pip install https://github.com/erowan/stubo-app/archive/master.tar.gz
 
 RUN mkdir -p /opt/stubo/stubo-app-master/etc 
 RUN mkdir -p /usr/local/python/
